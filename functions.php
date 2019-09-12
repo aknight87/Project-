@@ -1,8 +1,8 @@
 <?php
 // PHP - Random Quote Generator
 
-// Create the Multidimensional array of quote elements and name it quotes
-// Each inner array element should be an associative array
+// Multidimensional array of quote elements, name it quotes
+// Make each inner array element an associative array
 $quotes[]= [
   'quote' => 'All that we are is a result of what we have thought.',
   'source' => 'Buddha'
@@ -34,7 +34,8 @@ $quotes[]= [
  ];
 
 
-// Create the getRandomQuuote function and name it getRandomQuote
+// Create a getRandomQuuote function
+
 function getRandomQuote($quotes) {
 global $qoutes;
 return $quotes [array_rand($quotes)];
@@ -42,7 +43,8 @@ return $quotes [array_rand($quotes)];
 };
 
 
-// Create the printQuote funtion and name it printQuote
+// Create printQuote funtion that will display returned quote from getRandomQuote function
+
 function printQuote($favQuotes) {
   $favQuotes = getRandomQuote($quotes);
   $displayQuotes = '';
